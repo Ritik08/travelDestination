@@ -1,0 +1,35 @@
+<main>
+  <div class="row col-lg-8 col-md-6 col-sm-8 col-xs-10">
+    <div class="card">
+      <img
+        class="card-img-top"
+        src="{{ offerDetails.imgUrl }}"
+        alt="offerDetails"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Discount upto: {{ offerDetails.discount }}</h5>
+        <p class="card-text">
+          Terms and conditions: <br /><br />{{ offerDetails.desc }}
+        </p>
+        <button class="btn btn-primary p-2" (click)="openModal(template)">
+          Claim Offer
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #template>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">
+        <i class="fa fa-check check-icon" aria-hidden="true"></i>
+        &nbsp;&nbsp;
+        <span>Offer Claimed Successfully</span>
+      </h4>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" (click)="modalRef.hide()">
+        Close
+      </button>
+    </div>
+  </ng-template>
+</main>

@@ -1,0 +1,49 @@
+.user-account {
+  display: flex;
+  max-width: 50rem;
+  margin: auto;
+  color: white;
+}
+
+.user-account > * {
+  flex: 1 1;
+  text-align: center;
+  margin: 2rem;
+}
+
+.offer-heading {
+  color: #ec5b24;
+  min-height: 2rem;
+}
+
+.card-img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.reward-text {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .reward-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .card-img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .col-md-3 {
+    width: 100%;
+    float: left;
+    margin: 0;
+  }
+}

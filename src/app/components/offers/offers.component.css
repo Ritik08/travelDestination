@@ -1,0 +1,22 @@
+.card {
+  width: max-content;
+  margin: auto;
+}
+.row {
+  margin: auto;
+}
+
+.card-img-top {
+  min-width: 100%;
+  height: auto;
+}
+
+.check-icon {
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}

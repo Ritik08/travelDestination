@@ -1,0 +1,18 @@
+.header {
+  text-align: center;
+}
+
+.offers {
+  background: #ec5b24;
+  min-height: 5rem;
+  line-height: 5rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+.sub-heading {
+  background: lightgray;
+  color: #ec5b24;
+  min-height: 3rem;
+  line-height: 3rem;
+}

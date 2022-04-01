@@ -1,0 +1,59 @@
+<main class="user-rewards">
+  <!-- cashback and points -->
+  <div class="user-account">
+    <div class="user-benefits" *ngFor="let item of rewards">
+      <div
+        class="card"
+        [style.background]="item.id > 1 ? '#923638' : '#1a2653'"
+      >
+        <div class="card-body">
+          <img
+            class="card-img img-fluid"
+            src="{{ item.logoUrl }}"
+            alt="offers"
+          />
+          <span class="reward-text">{{ item.reward }}</span>
+          <p class="card-text mt-3">
+            {{ item.desc }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!-- offer List -->
+    <div class="container">
+      <h4 class="offer-heading">Offers to travel</h4>
+      <div class="row">
+        <div class="col-md-3 col-sm-6" *ngFor="let item of offerList">
+          <div class="card mb-4">
+            <img
+              class="card-img-top"
+              style="height: 8rem"
+              src="{{ item.imgUrl }}"
+              alt="offers"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Discount upto: {{ item.discount }}</h5>
+              <p class="card-text">
+                {{ item.desc }}
+              </p>
+              <button
+                class="btn btn-light p-2 mr-2"
+                (click)="handleClick(item.id)"
+              >
+                Learn More
+              </button>
+              <button
+                class="btn btn-warning p-2"
+                (click)="handleClick(item.id)"
+              >
+                Claim Offer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
